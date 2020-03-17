@@ -17,10 +17,12 @@ class Show < ActiveRecord::Base
   end 
   
   def ratings_sum
-    self.
+    self.sum("rating")
   end 
   
   def popular_shows
+    self.where("rating" )
+  
   end 
   
   def shows_by_alphabetical_order
